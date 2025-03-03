@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+#root {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@layer base {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+        -webkit-appearance: none;
+        margin: 0;
+        -moz-appearance: textfield !important;
+    }
+}
+
+.lender-offer {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.lender-offer .field {
+    display: flex;
+    justify-content: space-between;
+}
+.lender-offer .field label {
+    font-weight: bold;
+}
